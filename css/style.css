@@ -1,0 +1,415 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #AE7C78;
+}
+.container{
+    margin: 0 auto;
+    width: 1200px;
+}
+.btn{
+    padding: 30px 70px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+
+    background-color: #D89999;
+    border-radius: 40px;
+    transition: background-color,color .3s;
+}
+.btn:hover{
+    background-color: #f1c1c1;
+    color: darkred;
+}
+.slider__btn{
+    padding: 30px 105px
+}
+.title__h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+.header{
+    padding: 20px 0 29px 0;
+}
+.nav{
+    min-width: 1200px;
+    border-top: 1px solid #AE7C78;
+    border-bottom: 1px solid #AE7C78;
+    padding: 10px 0 2px 0;
+}
+.nav__bar, .nav__bar>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__bar>ul{
+    width: 100%;
+    padding: 0;
+}
+.menu__list{
+    list-style-type: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color 0.3s;
+}
+.menu__logo {
+    margin: 0 63px;
+}
+.menu__link{
+    text-decoration: none;
+    font-size: 16px;
+    color: #AE7C78;
+}
+.menu__list:hover {
+    border-bottom-color: #AE7C78;
+}
+.header__box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 52px;
+}
+.header__text{
+    width: 384px;
+}
+.header__h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 59px;
+    margin-bottom: 25px;
+}
+.header__h1>span{
+    font-style: italic;
+}
+.header__text>p{
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 94px;
+}
+.header__box>img:first-of-type{
+    margin-top: 89px;
+    width: 386px;
+    height: 404px;
+    border-radius: 10px;
+}
+.header__box>img:last-of-type{
+    margin-top: 31px;
+    width: 387px;
+    height: 420px;
+    border-radius: 10px;
+}
+.advantages{
+    display: flex;
+    justify-content: space-between;
+}
+.advantages__item{
+    position: relative;
+    padding-left: 100px;
+    width: 385px;
+}
+.advantages__item>h4{
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.advantages__item>p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+}
+.advantages__item-delivery:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 82px;
+    height: 52px;
+    background-image: url(../img/delivery.svg);
+    background-repeat: no-repeat;
+    top: 20px;
+    left: 0;
+}
+.advantages__item-freshness:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    background-image: url(../img/freshness.svg);
+    background-repeat: no-repeat;
+    top: 20px;
+    left: 27px;
+}
+.advantages__item-photo:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 58px;
+    height: 52px;
+    background-image: url(../img/photo.svg);
+    background-repeat: no-repeat;
+    top: 20px;
+    left: 20px;
+}
+.slider{
+    padding: 49px 0 69px 0;
+}
+.slider__cart{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 23px;
+}
+.slider__text{
+    width: 387px;
+    padding: 10px 0 0 0;
+    margin-right: 26px;
+}
+.slider__text>h3{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 20px;
+}
+.slider__text>p{
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 24px;
+}
+.slider__text>.price{
+    font-size: 24px;
+    margin-top: 29px;
+    margin-bottom: 98px;
+}
+.slider__arrows{
+    text-align: center;
+}
+.slider__arrows> *+*{
+    margin-left: 20px;
+}
+.slider__arrows img{
+    width: 50px;
+}
+.catalogs{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.catalogs__item{
+    width: 387px;
+    height: 442px;
+    border-radius: 10px;
+}
+.catalogs__item>a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(174, 124, 120, 0.6);
+    border-radius: 10px;
+
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.catalogs__item span{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+.catalogs__item-1{
+    background-image: url("../img/wedding-bouquets.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.catalogs__item-2{
+    background-image: url("../img/fresh-beautiful-peony-flowers-vase.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.catalogs__item-3{
+    background-image: url("../img/bouquets-in-the-assortment.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.stock{
+    display: flex;
+    justify-content: space-between;
+    background: #AE7C78;
+    height: 391px;
+}
+.stock__text{
+    color: #fff;
+    background: #AE7C78;
+    padding: 2px 0 0 101px;
+}
+.stock__img{
+    height: 100%;
+    width: 590px;
+    background: url("../img/stock_bg.jpg") right  no-repeat;
+}
+.stock__text>h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 44px;
+    line-height: 59px;
+    letter-spacing: 0.02em;
+    width: 387px;
+    margin-bottom: 0;
+}
+.stock__text>p{
+    font-size: 24px;
+    line-height: 29px;
+    width: 387px;
+}
+.order{
+    padding: 49px 0 80px 0;
+}
+.order__box{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0 0 0;
+}
+.order__item{
+    text-align: center;
+}
+.order__item>img{
+    height: 52px;
+    margin-bottom: 6px;
+}
+.order__item>h4{
+    margin: 0 0 7px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+.order__item>p{
+    margin: 0;
+    width: 285px;
+    font-size: 16px;
+    line-height: 20px;
+}
+.news{
+    display: flex;
+    justify-content: space-between;
+}
+.news__text{
+    width: 508px;
+    padding: 40px 0 0 0;
+}
+.news__text>.title__h2{
+    text-align: left;
+}
+.news__text>p{
+    width: 387px;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 42px;
+    margin-bottom: 39px;
+}
+.news__links>*+*{
+    margin-left: 15px;
+}
+.news__images{
+    display: grid;
+    grid-template-columns: 285px 387px;
+    grid-template-rows: 220px 220px;
+    grid-gap: 20px;
+}
+.news__images>div:nth-child(1) {
+    background-image: url("../img/news-img1.jpg");
+}
+.news__images>div:nth-child(2) {
+    background-image: url("../img/news-img2.jpg");
+}
+.news__images>div:nth-child(3){
+    background-image: url("../img/news-img3.jpg");
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column: 2/3;
+}
+.reviews{
+    padding: 10px 0 45px 0;
+    border: 1px solid #AE7C78;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.reviews>h2{
+    margin-bottom: 21px;
+}
+.reviews__box{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+}
+.reviews__item {
+    width: 300px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+.address {
+    height: 644px;
+    background: url("../img/map.jpg") center center no-repeat;
+    background-size: cover;
+}
+.address__box{
+    padding-top: 53px;
+    padding-left: 101px;
+}
+.address__content{
+    width: 386px;
+    background: #F7FAFC;
+    box-shadow: 0 4px 40px rgba(217, 217, 217, 0.3);
+    border-radius: 12px;
+    padding: 40px 35px;
+}
+.address__content .title__h2{
+    text-align: left;
+    margin: 0 0 37px 0;
+}
+.address__content> h5{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    margin: 0 0 19px 0;
+}
+.address__content> p{
+    margin: 0 0 27px 0;
+}
+.footer{
+    background-color: #AE7C78;
+}
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 97px;
+}
+.footer__bar{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.footer__bar .menu__link{
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
